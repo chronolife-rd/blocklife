@@ -38,7 +38,7 @@ with st.sidebar:
         st.session_state.api_key_v1 = api_key_v1
 
     col1, col2 = st.columns(2)
-    button_sign_in = col1.button('Go')
+    button_sign_in = col1.button('Connect')
     button_sign_out = col2.button('Change account')
     
     if button_sign_in:
