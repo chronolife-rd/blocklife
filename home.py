@@ -114,7 +114,7 @@ with st.container():
                     st.info("Change Blocked status and click on Apply again")
             
     else:
-        st.info('Please enter a Username and an API-key to access Data')
+        st.info('Please enter a Username, an API-key and a Second API-key to access Block life')
         
         
 footer = set_footer_style()
