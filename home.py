@@ -18,7 +18,7 @@ from back_functions import get_users
 from back_functions import get_status_table
 from back_functions import update_status
 
-st.set_page_config("Keelife",layout="wide",)
+st.set_page_config("Block life",layout="wide",)
 # hide_menu()
 init_session_state()
 
