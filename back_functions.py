@@ -72,13 +72,15 @@ def test_string(string, name, layout):
         
     return string, error
     
-def get_users():
+def get_subusers():
     client_username = st.session_state.client_username
-    api_key = st.session_state.api_key
-    url = URL_ROOT + "/user/{userId}".format(userId=client_username)
-    reply = requests.get(url, headers={"X-API-Key": api_key})
+    api_key         = st.session_state.api_key
+    url             = URL_ROOT + "/user/{userId}".format(userId=client_username)
+    reply           = requests.get(url, headers={"X-API-Key": api_key})
+    
     error = ''
     users = []
+    
     if reply.status_code == 200:
         users = json.loads(reply.text)['users'] 
     elif reply.status_code == 400:
